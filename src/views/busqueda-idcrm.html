@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscar CRM-ID</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+</head>
+<body>
+    <form class="p-4">
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Product's Name" autofocus>
+        </div>
+        <p></p>
+        <div class="d-grid gap-2">
+            <button class="btn btn-lg btn-primary">BuscarProspecto</button>
+        </div>
+    </form>
+
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', e => {
+            const codigoCRM = document.querySelector('#name').value;
+            alert(codigoCRM)
+            e.preventDefault()
+
+        })
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
